@@ -1,0 +1,33 @@
+{
+  "name": "purch",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/purch.js",
+  "module": "./dist/purch.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/purch.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["web-components", "framework"],
+  "author": "",
+  "license": "ISC",
+  "description": "A lightweight web component framework",
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^6.2.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@types/node": "^20.11.24"
+  }
+}

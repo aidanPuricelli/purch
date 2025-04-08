@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "dist",
+      "declaration": true,
+      "declarationDir": "types",
+      "baseUrl": ".",
+      "paths": {
+        "purch": ["./src/index.ts"]
+      }
+    },
+    "include": ["src", "test"],
+    "exclude": ["node_modules", "dist"]
+  }
+  

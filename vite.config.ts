@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => ({
       fileName: 'purch',
       formats: ['es']
     },
+    esbuild: {
+      legalComments: 'inline' // ✅ Keeps /* @vite-ignore */ in output
+    },
     rollupOptions: {
       external: ['vue'],
       output: {
@@ -24,7 +27,7 @@ export default defineConfig(({ mode }) => ({
   },
   resolve: {
     alias: {
-      'purch': mode === 'production' 
+      purch: mode === 'production' 
         ? 'purch' 
         : path.resolve(__dirname, './src/index.ts')
     }

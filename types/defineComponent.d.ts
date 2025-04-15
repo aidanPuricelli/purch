@@ -1,9 +1,9 @@
-export type PropType = {
+type PropType = {
     type: StringConstructor | NumberConstructor | BooleanConstructor;
     default?: string | number | boolean;
 };
-export type ComponentProps = Record<string, PropType>;
-export type ComponentConfig = {
+type ComponentProps = Record<string, PropType>;
+type ComponentConfig = {
     props?: ComponentProps;
     html?: string;
     css?: string;
@@ -12,4 +12,5 @@ export type ComponentConfig = {
     onMount?: (el: HTMLElement) => void;
     onDestroy?: (el: HTMLElement) => void;
 };
-export { defineComponent } from './defineComponent';
+export declare function defineComponent(name: string, config: ComponentConfig): void;
+export {};
